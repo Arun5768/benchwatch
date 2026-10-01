@@ -1,0 +1,16 @@
+{
+  "name": "benchwatch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --config wrangler.jsonc --port 8794",
+    "test": "node --test tests/*.test.js",
+    "db:local": "wrangler d1 migrations apply DB --config wrangler.jsonc --local",
+    "check": "wrangler deploy --config wrangler.jsonc --dry-run --outdir .build",
+    "deploy": "wrangler deploy --config wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "4.92.0"
+  }
+}
