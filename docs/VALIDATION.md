@@ -9,7 +9,16 @@
 - Browser checks: normal, sustained vibration, overheating and packet-loss scenarios; device selection; maintenance-note persistence; pause/resume; desktop and 390px mobile layout with no page-wide horizontal overflow.
 - CSV content generation is unit-tested. The interface also provides a selectable CSV preview because embedded browsers may block downloads. Actual download behavior depends on the browser.
 
-## Important boundaries
+## Published deployment checks - 2 October 2026
+
+- Cloudflare Worker and D1 database deployed after project-owner approval.
+- Public site and health endpoint return HTTP 200; production authentication is configured.
+- Unauthenticated fleet reads and device keys used as operator keys return HTTP 401.
+- Invalid readings return HTTP 400 and a device key used for another device returns HTTP 401.
+- Authorized fleet reads return four empty channels. No synthetic test readings were stored in production.
+- Production keys were generated independently of local test fixtures and are excluded from Git.
+
+## Hardware boundaries
 
 - No physical equipment or sensor was connected.
 - The complete Arduino sketch was not compiled or flashed; only its standalone feature calculation was compiled and tested.

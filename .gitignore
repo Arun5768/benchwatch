@@ -2,6 +2,7 @@ node_modules/
 .wrangler/
 .build/
 .dev.vars
+.secrets/
 .env
 firmware/benchwatch/secrets.h
 output/

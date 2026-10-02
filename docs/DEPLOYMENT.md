@@ -9,7 +9,7 @@ Do not publish until the project owner has reviewed and explicitly approved the 
 1. Run npm ci, npm test and npm run check.
 2. Inspect firmware/secrets.h, .dev.vars and all environment files: they must stay ignored.
 3. Choose the final repository visibility and deployment name.
-4. The checked-in D1 ID is a placeholder for local development, not a real remote database.
+4. The checked-in D1 ID belongs to the original BenchWatch deployment. Create your own database and replace this ID when deploying a fork. The ID is not an authentication credential.
 
 ## Cloudflare
 

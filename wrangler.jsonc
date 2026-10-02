@@ -11,7 +11,7 @@
     {
       "binding": "DB",
       "database_name": "benchwatch-db",
-      "database_id": "00000000-0000-0000-0000-000000000001",
+      "database_id": "ea978058-a5b9-4e0e-888f-b9db5ba0a165",
       "migrations_dir": "migrations",
     },
   ],

@@ -2,6 +2,8 @@
 
 An independent equipment-telemetry lab by Arun Pratap Singh Chandel.
 
+**Live demo:** https://benchwatch-arun.arunchandel1780.workers.dev/
+
 **Status: working software prototype with synthetic demo data. Physical hardware validation pending.**
 Not affiliated with Arduino, Qualcomm or Edge Impulse. Not a control system, trained AI model, fault diagnosis engine or certified industrial monitor.
 
